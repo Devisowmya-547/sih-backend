@@ -1,0 +1,92 @@
+###
+post http://localhost:4000/student/register
+Content-Type: application/json
+
+{
+    "name" : "Devi Sowmya",
+    "email" : "sampleTest@gmail.com",
+    "password" : "chinna@2723"
+}
+
+###
+post http://localhost:4000/student/login
+Content-Type: application/json
+
+{
+    "email" : "sampleTest@gmail.com",
+    "password" : "chinna@2723"
+}
+
+###
+post http://localhost:4000/alumni/register
+Content-Type: application/json
+
+{
+    "name" : "Devi Sowmya",
+    "email" : "sampleTest@gmail.com",
+    "password" : "chinna@2723"
+}
+
+###
+post http://localhost:4000/alumni/login
+Content-Type: application/json
+
+{
+    "email" : "sampleTest@gmail.com",
+    "password" : "chinna@2723"
+}
+
+###
+put http://localhost:4000/sessions/addWebinar
+Content-Type: application/json
+
+{
+    "resourcePerson" : "Hemanth",
+    "topic" : "MERN",
+    "starts on" : "2024-09-04  5:00pm",
+    "duration" : "3hrs"
+}
+
+###
+put http://localhost:4000/sessions/addQna
+Content-Type: application/json
+
+{
+    "resourcePerson" : "Hemanth",
+    "topic" : "MERN",
+    "starts on" : "2024-09-04  5:00pm",
+    "duration" : "3hrs"
+}
+
+###
+put http://localhost:4000/sessions/addWorkshop
+Content-Type: application/json
+
+{
+    "resourcePerson" : "Hemanth",
+    "topic" : "MERN",
+    "starts on" : "2024-09-04  5:00pm",
+    "duration" : "3hrs"
+}
+
+###
+put http://localhost:4000/sessions/addMockInterview
+Content-Type: application/json
+
+{
+    "resourcePerson" : "Dumbhu",
+    "topic" : "MERN",
+    "starts on" : "2024-09-04  5:00pm",
+    "duration" : "3hrs"
+}
+
+###
+get http://localhost:4000/sessions/get/mockInterview
+Content-Type: application/json
+
+{
+    "resourcePerson" : "Dumbhu",
+    "topic" : "MERN",
+    "starts on" : "2024-09-04  5:00pm",
+    "duration" : "3hrs"
+}
